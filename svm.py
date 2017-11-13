@@ -12,7 +12,7 @@ import math
 from sklearn.svm import SVC
 from sklearn.metrics import precision_recall_fscore_support
 
-fileName = '../data/kddcup.data_10_percent';
+fileName = '../../data/kddcup.data_10_percent';
 #my_data = genfromtxt(fileName, delimiter=',')
 #print my_data;
 
