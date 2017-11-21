@@ -7,5 +7,6 @@ def get_data():
     validation_samples = genfromtxt('../data/validation_set.csv', delimiter=',', usecols = range(41))
     validation_labels = genfromtxt('../data/validation_labels.txt', delimiter=',', usecols = range(1) , dtype=None)
     test_samples = genfromtxt('../data/test_set.csv', delimiter=',', usecols = range(41))
-    return training_samples, validation_samples, test_samples, training_labels, validation_labels
+    test_labels = genfromtxt('../data/test_labels.txt', delimiter=',', usecols = range(1) , dtype=None)
+    return training_samples, validation_samples, test_samples, training_labels, validation_labels, test_labels
 
