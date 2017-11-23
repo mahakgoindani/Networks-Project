@@ -41,4 +41,3 @@ if __name__ == "__main__":
   print test_predictions
     
   print precision_recall_fscore_support(test_labels, test_predictions, average='micro')
-
