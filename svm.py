@@ -35,6 +35,7 @@ if __name__ == "__main__":
   loaded_model = pickle.load(open(saved_model_filename, 'rb')) 
     
   print 'test set'
+  print "C: " + str(maxC)
   test_predictions = clf.predict(test_samples)
   print test_labels
   print test_predictions

@@ -88,9 +88,9 @@ def main():
       other_indices.append(index)
     index = index + 1
 
-  normal_indices = random.sample(normal_indices, 30000)
-  smurf_indices = random.sample(smurf_indices, 20000)
-  neptune_indices = random.sample(neptune_indices, 20000)
+  #normal_indices = random.sample(normal_indices, 100000)
+  #smurf_indices = random.sample(smurf_indices, 100000)
+  #neptune_indices = random.sample(neptune_indices, 100000)
   samples = normal_indices + smurf_indices + neptune_indices + other_indices
 
   dataset = []
