@@ -27,7 +27,6 @@ if __name__ == "__main__":
         param = {'max_depth': max_depth, 'eta': learning_rate, 'silent': 1, 'objective': 'multi:softmax', 'num_class': 24}
         bst = xgb.train(param, dtrain, num_round)
         # bst.save_model('xgboost.model')
-        bst = xgb.Booster({'nthread': 4})
         # bst.load_model('xgboost.model')
         
         print 'validation set'
